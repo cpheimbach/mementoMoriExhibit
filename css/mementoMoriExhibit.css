@@ -1,6 +1,12 @@
 /*
 font-family: 'UnifrakturMaguntia', cursive;
 font-family: 'IM Fell English', serif;
+
+$richBlack: rgba(17, 13, 13, 1);
+$spanishCarmine: rgba(193, 1, 69, 1);
+$nickel: rgba(109, 116, 117, 1);
+$pearlAqua: rgba(126, 214, 186, 1);
+$glitter: rgba(234, 235, 242, 1);
 */
 
 body {
@@ -8,6 +14,9 @@ body {
     max-width: 2000px;
     margin: auto;
     background-color: black;
+    background-color: rgba(17, 13, 13, 1);
+    color: lightGrey;
+    color: rgba(234, 235, 242, 1);
 }
 
 nav {
@@ -18,6 +27,7 @@ h1,
 h2,
 h3 {
   font-family: 'UnifrakturMaguntia';
+  letter-spacing: .1em;
 }
 
 nav,
@@ -33,9 +43,43 @@ p {
     background-image: url("../img/dark_embroidery.png");
     background-position: center;
     background-repeat: repeat;
-    text-shadow: 0px 0px 14px lightyellow;
+    min-height: 28em;
+  }
+
+.jumbotron
+small {
+  color: rgba(193, 1, 69, 1);
+}
+
+.thumbnailRibbon {
+  margin-top: -10%;
+  z-index: 1;
+  display: inline-block;
+}
+
+.img-thumbnail {
+  border-radius: 0px;
+  background-color: rgba(17, 13, 13, 1);
+}
+
+.artist {
+  margin-top: 3em;
+  font-size: 1.5em;
+}
+
+.address {
+  font-size: 2em;
 }
 
 .NextEventRibbon {
-  background-color: khaki;
+  background-color: rgba(193, 1, 69, 1);
+  color: rgba(17, 13, 13, 1);
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.NextEventRibbon
+small {
+  font-family: 'IM Fell English', serif;
+  color: rgba(234, 235, 242, 1);
 }
