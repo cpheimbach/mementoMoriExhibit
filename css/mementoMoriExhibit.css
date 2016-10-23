@@ -1,15 +1,41 @@
-
+/*
+font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'IM Fell English', serif;
+*/
 
 body {
     padding-top: 70px;
+    max-width: 2000px;
+    margin: auto;
+    background-color: black;
 }
 
 nav {
   position: fixed;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'UnifrakturMaguntia';
+}
+
+nav,
+p {
+  font-family: 'IM Fell English', serif;
+}
+
+.container {
+  max-width: 970px;
+}
+
 .jumbotron {
-    background-image: url("http://www.placehold.it/800x500?text=Master-Header");
-    background-repeat: no-repeat;
+    background-image: url("../img/dark_embroidery.png");
     background-position: center;
+    background-repeat: repeat;
+    text-shadow: 0px 0px 14px lightyellow;
+}
+
+.NextEventRibbon {
+  background-color: khaki;
 }

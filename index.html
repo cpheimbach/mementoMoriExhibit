@@ -3,23 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 
   <title>Memento Mori Exhibition by Dr. Rosalind Polley </title>
 
   <!-- Bootstrap latest -->
-  <link rel="stylesheet" href="/css/mementoMoriExhibit.css" media="screen" title="mementoMoriSpecifics">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/css/mementoMoriExhibit.css" media="screen" title="mementoMoriSpecifics">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|UnifrakturMaguntia" rel="stylesheet">
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1>Memento Mori - <br><small>Remember you will die</small></h1>
+  <div class="jumbotron clearfix text-center">
+    <h1>Memento Mori <br><small>Remember you will die</small></h1>
+    <p>Exhibition by Dr. Rosalind Polley</p>
   </div>
-  <div class="container-fluid">
+  <div class="container">
     <nav class=" navbar-fixed-top navbar navbar-inverse ">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,24 +46,45 @@
     </nav>
 
     <div class="thumbnailRibbon">
-      <ul>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=Madeleine" alt="">Madeleine</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=LifeDeath" alt="">Life Death Rebirth</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=Everybody" alt="">Everybody is Free</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=Salvador" alt="">Salvador</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=EdwardJames" alt="">Homage to Edward James</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=Bells" alt="">For whom the Bell tolls</li>
-        <li><img class="img-thumbnail" src="http://placehold.it/200x150?text=GarryLovesGin" alt="">Gerry loves Gin</li>
+      <ul class="row list-inline text-center">
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=Madeleine" alt="">
+          <p>Madeleine</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=LifeDeath" alt="">
+          <p>Life Death Rebirth</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=Everybody" alt="">
+          <p>Everybody is Free</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=Salvador" alt="">
+          <p>Salvador</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=EdwardJames" alt="">
+          <p>Homage to Edward James</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=Bells" alt="">
+          <p>For whom the Bell tolls</p>
+        </li>
+        <li class="col-xs-6 col-sm-3 col-md-3"><img class="img-thumbnail img-responsive" src="http://placehold.it/200x150?text=GarryLovesGin" alt="">
+          <p>Gerry loves Gin</p>
+        </li>
       </ul>
     </div>
-    <div class="artist">
-      <div class="artistPortrait"></div>
-      <div class="artistStatement"></div>
+    <div class="artist row">
+      <div class="artistPortrait col-md-6">
+        <img class="img-responsive" src="http://placehold.it/500x400&text=Rosie" alt="">
+      </div>
+      <div class="artistStatement col-md-6">
+        <h2>Artist Statement</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi vitae consectetur ipsum, voluptatum ab non id, iusto, mollitia quos veritatis delectus, dolore perspiciatis corporis? Vel iusto fugiat quibusdam saepe.</p>
+      </div>
     </div>
-    <div class="NextEventRibbon"></div>
-    <div class="location">
-      <div class="map"><img src="http://placehold.it/500x400?text=map" alt=""></div>
-      <div class="address">
+    <div class="NextEventRibbon text-center">
+      <h1>Next Event: <small>Drinks and Finnisage - Friday 4th of November 18:30</small> </h1>
+    </div>
+    <div class="location row">
+      <div class="map col-md-6"><img class="img-responsive" src="http://placehold.it/500x400?text=map" alt=""></div>
+      <div class="address col-md-6">
         <p>Atkinsons'Kram Gallery<br> 302 Garratt Lane<br> Wandsworth, London SW18 4EH</p>
       </div>
     </div>
