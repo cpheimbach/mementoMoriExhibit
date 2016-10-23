@@ -1,0 +1,15 @@
+
+
+body {
+    padding-top: 70px;
+}
+
+nav {
+  position: fixed;
+}
+
+.jumbotron {
+    background-image: url("http://www.placehold.it/800x500?text=Master-Header");
+    background-repeat: no-repeat;
+    background-position: center;
+}
