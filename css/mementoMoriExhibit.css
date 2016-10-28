@@ -25,7 +25,8 @@ nav {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'UnifrakturMaguntia';
   letter-spacing: .1em;
 }
@@ -35,17 +36,17 @@ p {
   font-family: 'IM Fell English', serif;
 }
 
+a {
+  color: rgba(193, 1, 69, 1);
+}
+
+a:hover {
+  color: rgba(193, 100, 120, 1);
+}
+
 .container {
   max-width: 970px;
 }
-
-.jumbotron {
-    background-image: url("../img/dark_embroidery.png");
-    background-position: center;
-    background-repeat: repeat;
-    /*margin-bottom: 1em;*/
-  }
-
 .jumbotron
 small {
   color: rgba(193, 1, 69, 1);
@@ -69,6 +70,8 @@ small {
   font-size: 1.5em;
 }
 
+
+
 .address {
   font-size: 2em;
 }
@@ -76,7 +79,7 @@ small {
 .address
 p {
   max-width: 320px;
-  margin: auto;
+  margin: 12%;
 }
 
 .map {
@@ -95,4 +98,28 @@ p {
 small {
   font-family: 'IM Fell English', serif;
   color: rgba(234, 235, 242, 1);
+}
+
+.footer {
+  min-height: 8em;
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.footer
+p {
+  max-width: 320px;
+  margin:auto;
+}
+
+.backgroundMori {
+  background-image: url("../img/dark_embroidery.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
