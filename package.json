@@ -1,0 +1,27 @@
+{
+  "name": "mementomoriexhib",
+  "version": "1.0.0",
+  "description": "Website of the Memento Mori Exhibition - Earlsfield",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpheimbach/mementoMoriExhibit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpheimbach/mementoMoriExhibit/issues"
+  },
+  "homepage": "https://github.com/cpheimbach/mementoMoriExhibit#readme",
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.0"
+  }
+}
