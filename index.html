@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  <script src="mementoMori.js" charset="utf-8"></script>
   <link rel="stylesheet" href="/css/mementoMoriExhibit.css" media="screen" title="mementoMoriSpecifics">
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+English|UnifrakturMaguntia" rel="stylesheet">
 </head>
@@ -23,56 +23,40 @@
     <p>Exhibition by Dr. Rosalind Polley</p>
   </div>
   <div class="container">
-    <!-- <nav class=" navbar-fixed-top navbar navbar-inverse ">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-          <a class="navbar-brand" href="#">Memento Mori</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Artworks</a></li>
-            <li><a href="#">Artist</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Friends</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
     <div class="thumbnailRibbon clearfix">
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/allTheBabiesINeverHad.jpg" alt="All the babies I never had">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/allTheBabiesINeverHad_thb.jpg" alt="All the babies I never had">
         <p class="text-center">All the eggs I <wbr>never met</p>
       </div>
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/fledglingFailure.jpg" alt="Fledgling Failure?">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/fledglingFailure_thb.jpg" alt="Fledgling Failure?">
         <p class="text-center">Fledgling Failure?</p>
       </div>
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/madeleine.jpg" alt="Madeleine the Psychopomp">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/madeleine_thb.jpg" alt="Madeleine the Psychopomp">
         <p class="text-center">Madeleine</p>
       </div>
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/surrealistSquirrel.jpg" alt="A Surrealist Squirrel">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/surrealistSquirrel_thb.jpg" alt="A Surrealist Squirrel">
         <p class="text-center">Salvador</p>
       </div>
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/gerald.jpg" alt="">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/gerald_thb.jpg" alt="My name is Gerald">
         <p class="text-center">My name is Gerald</p>
       </div>
-      <div class="item col-xs-6 col-sm-3 col-md-2"><img class=" img-responsive" src="img/homageEdwardJames.jpg" alt="Homage to Edward James">
+      <div class="item col-xs-6 col-sm-3 col-md-2 hvr-grow-shadow">
+        <img class="modalised img-responsive" src="img/homageEdwardJames_thb.jpg" alt="Homage to Edward James">
         <p class="text-center">Homage to <br>Edward James</p>
       </div>
     </div>
-    <div class="artist row vcenter">
-      <div class="artistPortrait col-sm-6 col-md-6">
+    <div class="artist row text-center">
+      <div class="artistPortrait col-sm-6 col-md-4 text-center">
         <h2>Rosalind</h2>
-        <img class="img-responsive" src="/img/rosie.jpg" alt="Rosie">
+        <img class="img-responsive" src="/img/rosie_thb.jpg" alt="Rosie">
       </div>
-      <div class="artistStatement col-sm-6 col-md-6 text-center">
+      <div class="artistStatement col-sm-6 col-md-4 text-center hvr-grow-shadow">
         <h2>Artist Statement</h2>
-        <img src="img/deathLifeAndRebirth.png" alt="" class="img-responsive">
+        <a href="artistStatement_deathLifeRebirth.pdf"><img src="img/deathLifeAndRebirth_thb.png" alt="" class="img-responsive"></a>
       </div>
     </div>
   </div>
@@ -82,7 +66,7 @@
   <div class="container">
     <div class="location row">
       <div class="address col-sm-6 col-md-6 text-center">
-        <p><strong>Atkinsons'Kram Gallery</strong><br> 302 Garratt Lane<br> Wandsworth,<br> London SW18 4EH</p>
+        <p><span>Atkinsons' Kram Gallery</span><br> 302 Garratt Lane<br> Wandsworth,<br> London SW18 4EH</p>
       </div>
       <div class="map col-sm-6 col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d336.6361940047522!2d-0.1908126510826701!3d51.444366015452886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f59002d8a8b%3A0xb5e5e4d2940a1db3!2s302+Garratt+Ln%2C+London+SW18+4EH!5e0!3m2!1sen!2suk!4v1477650246708"
             width="290" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
@@ -92,6 +76,21 @@
     <p class="text-center">All animals used in this work were sourced ethically, either dying of natural causes or being culled to support biodiversity.</p> <br>
     <p class="text-center">A useful resource: <a href="http://www.dyingmatters.org/">Dying Matters</a></p>
   </div>
+
+  <div id="imgModal" class="modal fade">
+    <div class="modal-dialog backgroundMori" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-title text-center" id="modal-caption">
+        Placeholder
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placehold.it/2000x1024?text=works" id="modal-image">
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
