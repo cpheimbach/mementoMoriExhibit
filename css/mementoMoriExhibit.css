@@ -111,6 +111,10 @@ a:hover {
     margin: auto;
 }
 
+.friends {
+    font-size: 1.3em;
+}
+
 .modal-title {
   font-family: 'IM Fell English', serif;
   font-size: 2em;
